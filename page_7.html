@@ -1,0 +1,235 @@
+
+    
+    <!DOCTYPE html>
+    <html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forum - Strona Główna</title>
+        <meta name="robots" content="index, follow">
+        <link rel="icon" href="https://nieruchomoscibulgaria.info/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://nieruchomoscibulgaria.info/css/styles.css">
+        <script>const BASE_URL = "https://nieruchomoscibulgaria.info";</script>
+        <script src="https://nieruchomoscibulgaria.info/js/search.js" defer></script>
+        <script src="https://nieruchomoscibulgaria.info/js/auth.js" defer></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="header-container">
+                <a href="https://nieruchomoscibulgaria.info/" class="logo">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg> BulgariaPlot
+                </a>
+                
+                <div class="search-wrapper">
+                    <input type="text" id="searchInput" placeholder="Szukaj..." autocomplete="off" class="search-input">
+                    <button class="search-btn"><svg class="icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></button>
+                    <div id="searchResults" class="search-results"></div>
+                </div>
+
+                <nav class="header-nav">
+                    <a href="/" class="nav-btn"><svg class="icon" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg> <span class="hidden-mobile">Główna</span></a>
+                    <button onclick="openLogin()" class="nav-btn"><svg class="icon" viewBox="0 0 24 24"><path d="M11 7L9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5-5-5zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8v14z"/></svg> <span class="hidden-mobile">Zaloguj</span></button>
+                    <button onclick="openRegister()" class="btn-primary"><svg class="icon" viewBox="0 0 24 24"><path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Rejestracja</button>
+                </nav>
+            </div>
+            
+            <div class="hero-title-area">
+                <h1>Polskie Forum Dyskusyjne</h1>
+            </div>
+            
+        </header>
+
+        <div class="layout-container">
+            <main class="main-content">
+                
+    <h2 class="page-title">Ostatnie dyskusje</h2>
+    <div class="post-list">
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (64).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">prawo budowlane</span><span class="tag">nieruchomości</span><span class="tag">garaż</span><span class="tag">księga wieczysta</span><span class="tag">prawo</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/pytanie-prawne-czy-wolnostojacy-garaz-jest-traktowany-jako-oddzielna-nieruchomosc.html">Pytanie prawne: Czy wolnostojący garaż jest traktowany jako oddzielna nieruchomość?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję kupić dom z dużym terenem, a na terenie znajduje się solidny, wolnostojący garaż. Zastanawiam się, czy z punktu widzenia prawa budowlanego i księgi wieczystej, ten garaż jest traktowany jako odrębny byt prawny, czy jest po prostu częścią ogólnej działki. Chciałbym wiedzieć, jakie są konsekwencje prawne, jeśli kiedyś zdecyduję się go sprzedać osobno lub jeśli będę chciał go rozbudować. Czy potrzebne są jakieś specjalne zgody, jeśli ma być on traktowany jako niezależna jednostka? Byłbym bardzo wdzięczny za porady prawników i osób, które miały z tym problem.</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Bartek_123</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 02.01.2025 02:36</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 14 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (60).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">Włochy</span><span class="tag">Zakup nieruchomości</span><span class="tag">Formalności prawne</span><span class="tag">Obcokrajowcy</span><span class="tag">Prawo włoskie</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/kupno-domu-we-wloszech-jakie-formalnosci-sa-absolutnie-kluczowe-potrzebuje-porady.html">Kupno domu we Włoszech - Jakie formalności są absolutnie kluczowe? Potrzebuję porady!</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję zakup nieruchomości we Włoszech i czuję się kompletnie zagubiony w tych wszystkich formalnościach. Czy wystarczy mieć umowę przedwstępną, czy muszę od razu angażować notariusza? Interesuje mnie przede wszystkim cały proces prawny - od sprawdzenia stanu prawnego nieruchomości po finalizację transakcji i opłacenie podatków. Czy polecacie jakieś sprawdzone biura prawne, które specjalizują się w transakcjach dla obcokrajowców? Każda informacja o podatkach czy wymogach wizowych będzie na wagę złota!</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Ewa_Kwiatkowska</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 01.01.2025 21:59</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 20 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (17).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">orientacja</span><span class="tag">mieszkanie</span><span class="tag">architektura</span><span class="tag">energooszczędność</span><span class="tag">remont</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/pomocy-orientacja-mieszkania-czy-faktycznie-wschod-zachod-jest-najlepszy.html">Pomocy! Orientacja mieszkania - czy faktycznie wschód/zachód jest najlepszy?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję zakup mieszkania w bloku i mam gigantyczny problem z orientacją. Zawsze słyszałem, że wschód jest najjaśniejszy, a zachód najcieplejszy, ale czy to prawda, czy to tylko mity? Interesuje mnie, jak te czynniki wpływają na ogrzewanie zimą i oświetlenie latem. Czy lepiej mieć mieszkanie z widokiem na północ, ale z dobrym doświetleniem, czy na wschód, nawet jeśli będzie chłodniej? Jakie są Wasze doświadczenia z życia w różnych orientacjach? Bardzo proszę o fachową radę.</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Zbychu</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 01.01.2025 12:11</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 17 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (65).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">ubezpieczenie nieruchomości</span><span class="tag">wymogi ubezpieczeniowe</span><span class="tag">zakup mieszkania</span><span class="tag">OC</span><span class="tag">ryzyko budowlane</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/pomocy-jakie-sa-kluczowe-wymogi-ubezpieczycieli-przy-nieruchomosci-nowy-kupujacy.html">Pomocy! Jakie są kluczowe wymogi ubezpieczycieli przy nieruchomości? (Nowy kupujący)</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję zakup mieszkania i jestem kompletnie zagubiony w kwestii ubezpieczeń. Mój doradca sugerował, że muszę wykupić nie tylko podstawowe OC, ale też inne dodatki, ale nie wiem, co jest absolutnie niezbędne. Czy naprawdę muszą być tam jakieś specjalne raporty o stanie technicznym budynku, czy wystarczy standardowa dokumentacja? Chciałbym wiedzieć, jakie są typowe 'pułapki' i na jakie elementy powinienem zwrócić szczególną uwagę, żeby ubezpieczenie było pełne i nie było problemów przy ewentualnym roszczeniu. Jakie są Wasze doświadczenia?</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Dorota_1980</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 01.01.2025 07:23</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 20 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (67).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">zabytki</span><span class="tag">rejestr zabytków</span><span class="tag">konserwator</span><span class="tag">renowacja</span><span class="tag">prawo budowlane</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/wpis-do-rejestru-zabytkow-czy-wystarczy-opinia-konserwatora-czy-czeka-mnie-biurokracja.html">Wpis do rejestru zabytków - czy wystarczy opinia konserwatora, czy czeka mnie biurokracja?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję prace renowacyjne przy starej kamienicy i natknąłem się na temat rejestru zabytków. Bardzo mnie zastanawia cały proces - czy faktycznie wystarczy, że konserwator wyda pozytywną opinię, czy to tylko początek długiej ścieżki urzędowej? Czy muszę mieć jakieś konkretne dokumenty przed złożeniem wniosku? Chciałbym wiedzieć, jakie są realne etapy i jakie są największe pułapki biurokratyczne, o których nie piszą w poradnikach. Czy ktoś z Was przechodził przez ten proces i może podzielić się doświadczeniami?</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Adrian_99</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 01.01.2025 03:25</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 20 odpowiedzi</span>
+            </div>
+        </div>
+        
+    </div>
+
+    
+    <div class="pagination">
+        
+        
+        <a href="https://nieruchomoscibulgaria.info/" class="page-link ">1</a>
+        
+        
+        <a href="https://nieruchomoscibulgaria.info/page_2.html" class="page-link ">2</a>
+        
+        
+        <a href="https://nieruchomoscibulgaria.info/page_3.html" class="page-link ">3</a>
+        
+        
+        <a href="https://nieruchomoscibulgaria.info/page_4.html" class="page-link ">4</a>
+        
+        
+        <a href="https://nieruchomoscibulgaria.info/page_5.html" class="page-link ">5</a>
+        
+        
+        <a href="https://nieruchomoscibulgaria.info/page_6.html" class="page-link ">6</a>
+        
+        
+        <a href="https://nieruchomoscibulgaria.info/page_7.html" class="page-link active">7</a>
+        
+    </div>
+    
+    
+            </main>
+            
+            <aside class="sidebar">
+                <div class="card card-dark">
+                    <h3 class="widget-title">Statystyki forum</h3>
+                    <ul class="stat-list">
+                        <li><span>Tematy:</span> <span>185</span></li>
+                        <li><span>Wiadomości:</span> <span>2599</span></li>
+                        <li><span>Uczestnicy:</span> <span>143</span></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="widget-title">Losowe tematy</h3>
+                    <ul class="random-links">
+                        
+                        <li><a href="https://nieruchomoscibulgaria.info/posts/pomocy-orientacja-okien-w-mieszkaniu-czy-wschod-czy-zachod-jest-lepszy-jak-to-wplywa-na-cene.html"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> Pomocy! Orientacja okien w mieszkaniu - czy wschód, czy zachód jest lepszy? Jak to wpływa na cenę?</a></li>
+                        
+                        <li><a href="https://nieruchomoscibulgaria.info/posts/pomocy-co-dokladnie-oznacza-odrebna-wlasnosc-lokalu-w-kontekscie-spoldzielczym.html"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> Pomocy! Co dokładnie oznacza 'odrębna własność lokalu' w kontekście spółdzielczym?</a></li>
+                        
+                        <li><a href="https://nieruchomoscibulgaria.info/posts/jak-upewnic-sie-ze-wycena-nieruchomosci-jest-prawnie-wiazaca-i-rzetelna.html"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> Jak upewnić się, że wycena nieruchomości jest prawnie wiążąca i rzetelna?</a></li>
+                        
+                        <li><a href="https://nieruchomoscibulgaria.info/posts/szukam-porady-jak-najlepiej-zabezpieczyc-kapital-przed-inflacja-nieruchomosci-czy-alternatywy.html"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> Szukam porady: Jak najlepiej zabezpieczyć kapitał przed inflacją? Nieruchomości czy alternatywy?</a></li>
+                        
+                        <li><a href="https://nieruchomoscibulgaria.info/posts/pytanie-prawne-czy-zasiedzenie-dzialki-jest-mozliwe-jesli-wlasciciel-zyje-i-jest-swiadomy-sytuacji.html"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> Pytanie prawne: Czy zasiedzenie działki jest możliwe, jeśli właściciel żyje i jest świadomy sytuacji?</a></li>
+                        
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div>
+                    <h4 class="footer-title"><svg class="icon" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg> BulgariaPlot.net</h4>
+                    <p class="footer-text">Naszą misją jest zapewnienie najlepszej przestrzeni do wymiany doświadczeń i wiedzy.<br><br>&copy; 2026 Wszelkie prawa zastrzeżone.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Zasady Forum</h4>
+                    <p class="footer-text">Spam, wyzwiska, nieodpowiednie treści oraz trolle są surowo zabronione. Bądźmy dla siebie kulturalni.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Polityka</h4>
+                    <p class="footer-text">Wierzymy w przejrzystość. Używamy plików cookie w celu ulepszenia działania strony.<br><a href="#">Polityka prywatności</a></p>
+                </div>
+            </div>
+        </footer>
+    </body>
+    </html>
+    

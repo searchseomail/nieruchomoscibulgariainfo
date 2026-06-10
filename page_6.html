@@ -1,0 +1,785 @@
+
+    
+    <!DOCTYPE html>
+    <html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forum - Strona Główna</title>
+        <meta name="robots" content="index, follow">
+        <link rel="icon" href="https://nieruchomoscibulgaria.info/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://nieruchomoscibulgaria.info/css/styles.css">
+        <script>const BASE_URL = "https://nieruchomoscibulgaria.info";</script>
+        <script src="https://nieruchomoscibulgaria.info/js/search.js" defer></script>
+        <script src="https://nieruchomoscibulgaria.info/js/auth.js" defer></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="header-container">
+                <a href="https://nieruchomoscibulgaria.info/" class="logo">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg> BulgariaPlot
+                </a>
+                
+                <div class="search-wrapper">
+                    <input type="text" id="searchInput" placeholder="Szukaj..." autocomplete="off" class="search-input">
+                    <button class="search-btn"><svg class="icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></button>
+                    <div id="searchResults" class="search-results"></div>
+                </div>
+
+                <nav class="header-nav">
+                    <a href="/" class="nav-btn"><svg class="icon" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg> <span class="hidden-mobile">Główna</span></a>
+                    <button onclick="openLogin()" class="nav-btn"><svg class="icon" viewBox="0 0 24 24"><path d="M11 7L9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5-5-5zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8v14z"/></svg> <span class="hidden-mobile">Zaloguj</span></button>
+                    <button onclick="openRegister()" class="btn-primary"><svg class="icon" viewBox="0 0 24 24"><path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Rejestracja</button>
+                </nav>
+            </div>
+            
+            <div class="hero-title-area">
+                <h1>Polskie Forum Dyskusyjne</h1>
+            </div>
+            
+        </header>
+
+        <div class="layout-container">
+            <main class="main-content">
+                
+    <h2 class="page-title">Ostatnie dyskusje</h2>
+    <div class="post-list">
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (76).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">rynek mieszkaniowy</span><span class="tag">ceny nieruchomości</span><span class="tag">kredyty hipoteczne</span><span class="tag">inflacja</span><span class="tag">zakup mieszkania</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/dlaczego-ceny-mieszkan-skoczyly-tak-bardzo-szukam-analizy-czy-to-tylko-chwilowy-kryzys.html">Dlaczego ceny mieszkań skoczyły tak bardzo? Szukam analizy, czy to tylko chwilowy kryzys.</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Witam wszystkich. Od kilku miesięcy obserwuję, jak bardzo wzrosły ceny na rynku wtórnym i pierwotnym. Chciałbym zrozumieć, czy to tylko efekt braku kredytów, czy może są głębsze problemy strukturalne, które sprawiają, że mieszkanie stało się luksusem. Czy faktycznie głównym winowajcą jest inflacja, czy może to nadmierna spekulacja kapitałem? Jakie są Was zdaniem najbardziej realne powody tej drożyzny? Będę wdzięczny za wszelkie analizy i porady od osób, które przechodziły przez ten proces.</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Tomasz_Wroc</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 08.01.2025 14:23</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 19 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (74).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">deweloperzy</span><span class="tag">zakup domu</span><span class="tag">rynek nieruchomości</span><span class="tag">porada mieszkaniowa</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/dlaczego-deweloperzy-tak-agresywnie-wyprzedaja-nowe-domy-czy-to-dobry-znak.html">Dlaczego deweloperzy tak agresywnie wyprzedają nowe domy? Czy to dobry znak?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję zakup pierwszego domu i widzę, że na rynku jest mnóstwo promocji i wyprzedaży nowych inwestycji. Z jednej strony to kuszące okazje, ale z drugiej strony zastanawiam się, jakie są realne powody tego zjawiska. Czy to oznacza, że deweloperzy mają problemy z płynnością finansową, czy może po prostu muszą szybko pozbyć się gotowych jednostek? Bardzo bym prosił o fachową opinię - co powinienem sprawdzić, zanim podpiszę umowę, żeby wiedzieć, czy taka wyprzedaż to prawdziwa okazja, czy raczej sygnał ostrzegawczy?</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Janek88</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 08.01.2025 14:17</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 17 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (1).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">nieruchomości</span><span class="tag">prawo budowlane</span><span class="tag">inwestycje</span><span class="tag">działka</span><span class="tag">podział gruntów</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/jak-poprawnie-rozroznic-rodzaje-nieruchomosci-pomocy-przy-zakupie-dzialki-pod-inwestycje.html">Jak poprawnie rozróżnić rodzaje nieruchomości? Pomocy przy zakupie działki pod inwestycję!</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję kupić ziemię, ale jestem kompletnie zagubiony w kwestii prawnych różnic. Czy kluczowe jest tylko to, czy to działka budowlana, czy też muszę się przejmować, czy jest to grunt rolny, czy może teren pod zabudowę mieszkaniową? Bardzo mnie nurtuje, jakie kryteria decydują o faktycznym sposobie użytkowania i czy te różnice mają wpływ na możliwość późniejszego podziału. Czy ktoś z Was ma doświadczenia w tej dziedzinie i może mi wyjaśnić, na co muszę zwrócić szczególną uwagę, zanim podpiszę umowę? Doceniam każdą poradę!</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Piotr_Waw</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 08.01.2025 13:01</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 15 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (7).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">podatek</span><span class="tag">nieruchomości</span><span class="tag">prawo</span><span class="tag">budownictwo</span><span class="tag">finanse</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/podatek-od-nieruchomosci-2024-jakie-stawki-obowiazuja-w-naszym-regionie-potrzebuje-sprawdzenia.html">Podatek od nieruchomości 2024 - Jakie stawki obowiązują w naszym regionie? Potrzebuję sprawdzenia!</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Cześć wszystkim. Mam problem z rozliczeniem podatku od nieruchomości i nie mogę znaleźć pewnych, aktualnych informacji. Czy ktoś wie, jakie stawki obowiązują w tym roku dla mieszkań i działek budowlanych w naszej okolicy? Czy te stawki są ustalane na poziomie gminnym, czy może jest jakiś ogólnopolski próg? Bardzo by mi pomogła wiedza, czy muszę się martwić zmianami w przepisach w porównaniu do zeszłego roku. Z góry dziękuję za każdą pomocną radę!</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Robert_Tech</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 08.01.2025 10:32</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 11 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (80).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">sprzedaż domu</span><span class="tag">nieruchomości</span><span class="tag">makler</span><span class="tag">szybka sprzedaż</span><span class="tag">porady prawne</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/pilna-sprzedaz-domu-jak-szybko-i-bez-strat-potrzebuje-waszych-doswiadczen.html">Pilna sprzedaż domu - Jak szybko i bez strat? Potrzebuję Waszych doświadczeń!</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planujemy pilną sprzedaż naszego domu i jestem dość zdezorientowany, bo nie wiem, od czego zacząć. Czy lepiej polegać na ogłoszeniach ogólnodostępnych, czy jednak zatrudnić profesjonalnego maklera? Interesuje mnie przede wszystkim maksymalna szybkość transakcji, ale jednocześnie chcę uniknąć strat finansowych. Czy ktoś z Was miał doświadczenia ze sprzedażą w krótkim czasie i może podzielić się strategiami, które naprawdę zadziałały? Jakie są Wasze sprawdzone metody na szybki deal?</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Patryk_25</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 08.01.2025 04:49</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 20 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (48).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">kredyt hipoteczny</span><span class="tag">zdolność kredytowa</span><span class="tag">nieruchomości</span><span class="tag">stopy procentowe</span><span class="tag">finanse osobiste</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/kredyt-hipoteczny-w-2024-roku-czy-to-juz-w-ogole-mozliwe-dla-przecietnej-osoby.html">Kredyt hipoteczny w 2024 roku - czy to już w ogóle możliwe dla przeciętnej osoby?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Bardzo mnie nurtuje temat zdolności kredytowej. Patrząc na obecne stopy procentowe i ceny nieruchomości, mam wrażenie, że rynek się zamknął dla większości ludzi. Chciałbym poznać Wasze doświadczenia. Czy naprawdę trzeba mieć idealne warunki finansowe, czy są jakieś sposoby na 'przebicie się' przez obecne kryteria banków? Jakie są obecnie najnowsze trendy i jakie dokumenty są kluczowe, żeby w ogóle zacząć rozmowę z doradcą? Jestem w lekkim szoku, bo wydaje mi się, że ten proces jest teraz bardziej skomplikowany niż kiedykolwiek.</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> PiotrekK</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 08.01.2025 03:10</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 10 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (18).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">nieruchomości</span><span class="tag">zakup</span><span class="tag">zadłużenie</span><span class="tag">księga wieczysta</span><span class="tag">porada</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/jak-bezpiecznie-sprawdzic-czy-nieruchomosc-nie-ma-ukrytego-dlugu-przed-zakupem.html">Jak bezpiecznie sprawdzić, czy nieruchomość nie ma ukrytego długu przed zakupem?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję zakup mieszkania i jestem bardzo zaniepokojony kwestią ewentualnego zadłużenia. Czy wystarczy mi sprawdzenie księgi wieczystej, czy muszę wykonać jakieś dodatkowe czynności? Chciałbym mieć stuprocentową pewność, że na lokatorze nie czeka żaden problem prawny ani hipoteka, o której nie wiem. Jakie są Was doświadczenia z weryfikacją długu? Czy polecacie jakieś sprawdzone metody?</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Dorota_1980</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 07.01.2025 10:14</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 12 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (6).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">podatek</span><span class="tag">nieruchomości</span><span class="tag">urzędy</span><span class="tag">finanse</span><span class="tag">podatki</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/gdzie-najlepiej-sprawdzic-wysokosc-podatku-od-nieruchomosci-za-rok-2024.html">Gdzie najlepiej sprawdzić wysokość podatku od nieruchomości za rok 2024?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Piszę do Was, bo zbliża się termin płatności i kompletnie się gubię w urzędowych stronach. Czy ktoś wie, czy można to sprawdzić online, czy muszę iść osobiście do urzędu miasta/gminy? Czy jest jakiś dedykowany portal, gdzie można to wyciągnąć na podstawie numeru działki? Byłoby super, gdyby ktoś podzielił się swoim doświadczeniem, bo nie chcę czekać w kolejce przez cały dzień.</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Karolina_S</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 07.01.2025 08:12</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 19 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (54).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">wycena</span><span class="tag">nieruchomość</span><span class="tag">rzeczoznawca</span><span class="tag">rynek</span><span class="tag">sprzedaż</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/jak-upewnic-sie-ze-wycena-nieruchomosci-jest-naprawde-bezbledna-szukam-porady.html">Jak upewnić się, że wycena nieruchomości jest naprawdę bezbłędna? Szukam porady!</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję sprzedaż mieszkania i mam problem z zaufaniem do rzeczoznawców. Otrzymałem już dwie różne wyceny, a różnica jest dość znacząca. Zastanawiam się, czy poleganie tylko na jednym opinii jest bezpieczne. Czy macie jakieś sprawdzone metody, jak samodzielnie zweryfikować wartość rynkową? Czy warto skonsultować się z agentem, czy może lepiej poprosić o drugą, niezależną opinię z innego miasta? Każda rada będzie na wagę złota.</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> mechanik_pro</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 07.01.2025 00:25</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 13 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (73).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">nieruchomości</span><span class="tag">sprzedaż</span><span class="tag">opłaty</span><span class="tag">notariusz</span><span class="tag">prawo</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/jak-dokladnie-wyglada-pelna-lista-oplat-przy-sprzedazy-mieszkania-pomocy.html">Jak dokładnie wygląda pełna lista opłat przy sprzedaży mieszkania? Pomocy!</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję sprzedaż mojego mieszkania i jestem kompletnie zagubiony w kwestii wszystkich kosztów. Czy ktoś z Was, kto przechodził przez tę procedurę, wie, jakie są wszystkie opłaty notarialne i skarbowe, które faktycznie spadają na sprzedającego? Bo słyszałem, że to nie tylko podatek, ale też jakieś koszty sądowe i tak. Chciałbym mieć precyzyjną listę, żeby się nie zaskoczyć na ostatniej prostej i móc zaplanować całość finansowo.</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> olaf_2000</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 06.01.2025 14:49</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 17 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (65).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">zakup mieszkania</span><span class="tag">rynek wtórny</span><span class="tag">wady konstrukcyjne</span><span class="tag">inspekcja nieruchomości</span><span class="tag">remont</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/kupuje-mieszkanie-na-rynku-wtornym-na-co-zwrocic-uwage-zeby-nie-wpasc-w-pulapke-ukrytych-wad.html">Kupuję mieszkanie na rynku wtórnym - na co zwrócić uwagę, żeby nie wpaść w pułapkę ukrytych wad?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję zakup mieszkania i jestem bardzo ostrożny, bo boję się kupić coś z poważnymi, ukrytymi problemami. Czy ktoś z Was, kto przechodził przez ten proces, może mi doradzić? Interesuje mnie zwłaszcza kwestia instalacji - czy wystarczy oglądanie wizualne, czy trzeba zlecić jakieś specjalistyczne badania? Czy powinnam się martwić wilgocią w łazienkach, nawet jeśli malowanie wygląda idealnie? Chciałabym wiedzieć, jakie 'czerwone flagi' powinny mnie ostrzec przed potencjalnymi kosztami remontu, które wyjdą mi na jaw dopiero po wprowadzeniu się do środka.</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Dorota_1980</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 06.01.2025 13:31</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 16 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (45).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">księga wieczysta</span><span class="tag">nieruchomości</span><span class="tag">prawo budowlane</span><span class="tag">transakcja</span><span class="tag">weryfikacja</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/jak-najlepiej-i-najszybciej-sprawdzic-czy-ksiega-wieczysta-dla-dzialki-faktycznie-istnieje.html">Jak najlepiej i najszybciej sprawdzić, czy księga wieczysta dla działki faktycznie istnieje?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję zakup kilku działek i jestem trochę zagubiony w procedurach. Znam teorię, ale w praktyce nie wiem, czy wystarczy mi tylko numer działki, czy muszę mieć jakieś dodatkowe dane, żeby rozpocząć weryfikację istnienia księgi wieczystej. Czy najlepiej iść do sądu czy może wystarczy portal internetowy? Bardzo zależy mi na czasie, bo transakcja jest pilna. Czy ktoś miał już z tym problem i może mi doradzić, która ścieżka jest najbardziej wiarygodna i najmniej biurokratyczna?</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Kamil_Lodz</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 06.01.2025 13:15</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 14 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (72).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">kredyt hipoteczny</span><span class="tag">wycena nieruchomości</span><span class="tag">bankowość</span><span class="tag">zakup mieszkania</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/wycena-nieruchomosci-przez-bank-czy-to-tylko-formalnosc-czy-cos-wiecej.html">Wycena nieruchomości przez bank - czy to tylko formalność, czy coś więcej?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję wziąć kredyt hipoteczny i bank poprosił o wycenę mojej nieruchomości przez zewnętrzną firmę. Zastanawiam się, jaki jest faktyczny cel tej wyceny - czy to tylko zabezpieczenie dla banku, czy może jest też elementem negocjacyjnym? Czy ta wycena ma decydujący wpływ na wysokość otrzymanego kredytu, czy tylko na jego maksymalną kwotę? Bardzo bym prosił o jakieś doświadczenia innych użytkowników, którzy przechodzili przez ten proces. Czy warto mieć drugą, niezależną opinię na temat wartości?</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Kuba_1995</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 06.01.2025 12:57</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 17 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (38).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">księga wieczysta</span><span class="tag">zadłużenie</span><span class="tag">nieruchomości</span><span class="tag">hipoteka</span><span class="tag">prawo</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/ksiega-wieczysta-a-stare-zadluzenie-jak-sprawdzic-czy-wpis-o-hipoteki-jest-nadal-aktualny.html">Księga wieczysta a stare zadłużenie - Jak sprawdzić, czy wpis o hipoteki jest nadal aktualny?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Mam problem z zakupem mieszkania i trafiłem na księgę wieczystą, gdzie widnieje wpis o zadłużeniu, które jest bardzo stare. Nie jestem pewien, czy ten wpis ma jeszcze jakąkolwiek moc prawną, skoro kredyt został spłacony lata temu. Czy wystarczy po prostu zażądać zaktualizowania wpisu z działu księgi wieczystej, czy muszę się martwić, że to zadłużenie jest nadal aktywne? Bardzo proszę o jakąś poradę, czy to jest standardowa procedura, czy powinienem wezwać prawnika.</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> ania_90</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 06.01.2025 03:43</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 12 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (28).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">inwestycje</span><span class="tag">nieruchomości</span><span class="tag">zwrot z inwestycji</span><span class="tag">rynek zagraniczny</span><span class="tag">mieszkania</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/inwestycja-w-nieruchomosci-za-granica-ktory-kraj-naprawde-daje-najwyzszy-zwrot.html">Inwestycja w nieruchomości za granicą: Który kraj naprawdę daje najwyższy zwrot?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję poważną inwestycję w mieszkanie, ale jestem kompletnie zagubiony w kwestii wyboru rynku. Wiem, że każdy mówi o innym kraju, a ja szukam miejsca, gdzie potencjał wzrostu wartości oraz dochód z najmu (yield) są maksymalne. Czy powinniśmy patrzeć na rynki wschodzące, czy może lepiej postawić na stabilne państwa zachodnie? Czy ktoś ma doświadczenia z konkretnymi krajami, które faktycznie udowadniają wysoki zwrot, uwzględniając też ryzyko regulacyjne? Będę wdzięczny za wszelkie, konkretne porady.</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Rysiek_55</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 05.01.2025 21:48</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 18 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (53).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">nieruchomości</span><span class="tag">prawo</span><span class="tag">gotówka</span><span class="tag">zakup mieszkania</span><span class="tag">finanse</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/jak-wysoki-moze-byc-prog-gotowkowy-przy-zakupie-mieszkania-czy-to-sie-zmienia.html">Jak wysoki może być próg gotówkowy przy zakupie mieszkania? Czy to się zmienia?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję zakup mieszkania i trafiłem na bardzo niejasne informacje dotyczące maksymalnej kwoty, jaką można zapłacić gotówką. Chciałbym się upewnić, jaki jest aktualny i prawnie wiążący próg. Czy te limity dotyczą tylko transakcji notarialnych, czy też mają zastosowanie do całego procesu zakupu? Bardzo zależy mi na precyzyjnej informacji, bo nie chcę, żeby moja transakcja została zablokowana z powodu nieaktualnej wiedzy. Czy ktoś z Was ma doświadczenia w tym temacie i może mi coś doradzić?</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Darek_Krakow</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 05.01.2025 06:37</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 15 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (67).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">nieruchomości</span><span class="tag">prawo</span><span class="tag">transakcja</span><span class="tag">gotówka</span><span class="tag">zakup mieszkania</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/prawny-limit-gotowki-przy-kupnie-mieszkania-czy-to-ma-jeszcze-znaczenie.html">Prawny limit gotówki przy kupnie mieszkania - czy to ma jeszcze znaczenie?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję zakup kawalerki i natknąłem się na artykuły o 'prawnych limitach transakcji gotówkowych'. Jestem trochę zdezorientowany, bo wydaje mi się, że większość transakcji na rynku nieruchomości odbywa się za przelewy. Czy te limity dotyczą tylko aktu notarialnego, czy też mają wpływ na sam proces zakupu? Czy jako kupujący muszę się tym faktycznie przejmować, czy to tylko teoria prawnicza? Bardzo proszę o wyjaśnienie, jakie są obecnie obowiązujące zasady i czy jest to ryzyko, z którym się spotykają kupujący.</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Robert_Tech</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 05.01.2025 04:50</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 19 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (12).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">wspólnota mieszkaniowa</span><span class="tag">prawo budowlane</span><span class="tag">części wspólne</span><span class="tag">własność</span><span class="tag">remont bloku</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/pomocy-czym-dokladnie-jest-nieruchomosc-wspolna-i-jakie-mamy-prawa-do-czesci-wspolnych.html">Pomocy! Czym dokładnie jest 'nieruchomość wspólna' i jakie mamy prawa do części wspólnych?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Dzień dobry wszystkim. Mamy w bloku sporo wątpliwości, zwłaszcza tych związanych z częściami wspólnymi, takimi jak klatki schodowe, piwnice czy nawet teren wokół budynku. Czy ktoś mógłby mi w prosty sposób wyjaśnić, czym prawnie jest ta 'nieruchomość wspólna'? Czy to oznacza, że nie możemy nic z nią zrobić, czy raczej, że mamy do niej wspólne prawa użytkownika? Bardzo mnie nurtuje, kto odpowiada za remonty i jakie są nasze obowiązki jako mieszkańców w tej kwestii. Będę wdzięczny za wszelkie wskazówki od osób, które już się z tym tematem zetknęły.</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Michal_IT</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 04.01.2025 20:22</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 18 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (1).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">księga wieczysta</span><span class="tag">prawo nieruchomości</span><span class="tag">transakcja mieszkaniowa</span><span class="tag">dokumentacja prawna</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/ktos-wie-dlaczego-niektore-nieruchomosci-nie-maja-ksiag-wieczystych-jak-to-naprawic.html">Ktoś wie, dlaczego niektóre nieruchomości nie mają ksiąg wieczystych? Jak to naprawić?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję kupić starszy dom i okazuje się, że dla tej konkretnej działki nie ma księgi wieczystej albo jest ona niekompletna. Sprzedający mówi, że to 'tylko formalność' i że to się kiedyś załatwi, ale ja jestem bardzo sceptyczny. Czy brak KW to poważny problem prawny, który uniemożliwi transakcję? Jakie są główne przyczyny takiego braku i czy istnieje procedura, którą możemy przyspieszyć? Czy polecacie jakieś kancelarie prawne, które specjalizują się w takich problemach?</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Grzesiek_77</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 04.01.2025 15:53</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 17 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (7).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">sprzedaż nieruchomości</span><span class="tag">rynek pierwotny</span><span class="tag">agencja nieruchomości</span><span class="tag">ceny mieszkań</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/gdzie-sprzedac-mieszkanie-zeby-osiagnac-jak-najwyzsza-cene-szukam-najlepszych-kanalow.html">Gdzie sprzedać mieszkanie, żeby osiągnąć jak najwyższą cenę? Szukam najlepszych kanałów!</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję sprzedaż mojego mieszkania i jestem trochę zagubiony w kwestii, gdzie najlepiej trafić z ofertą. Czy lepiej zaufać dużym portalom ogłoszeniowym, czy może skorzystać z pomocy agencji, która ma kontakty z inwestorami? Interesuje mnie, czy naprawdę ma znaczenie, czy sprzedaż powinna odbyć się na targach nieruchomości, czy może lepsze są kanały prywatne. Jakie są Wasze doświadczenia z konkretnymi platformami i czy polecacie jakieś specjalistyczne grupy na Facebooku? Każda rada będzie dla mnie na wagę złota.</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Piotr_Waw</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 04.01.2025 06:58</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 18 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (57).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">nieruchomości</span><span class="tag">transakcja</span><span class="tag">wycena</span><span class="tag">doradztwo prawne</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/czy-opinia-eksperta-jest-kluczowa-przy-kupnie-sprzedazy-nieruchomosci-potrzebuje-porady.html">Czy opinia eksperta jest kluczowa przy kupnie/sprzedaży nieruchomości? Potrzebuję porady!</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję dużą transakcję z nieruchomością i jestem nieco zagubiony w kwestii, jak bardzo powinienem polegać na opinii zewnętrznego eksperta. Czy wystarczy mi wycena rzeczoznawcy, czy lepiej skonsultować się z prawnikiem i doradcą rynkowym jednocześnie? Zastanawiam się, czy ich role się nie nakładają, bo nie wiem, kogo słuchać najbardziej. Czy macie doświadczenia z takimi skomplikowanymi procesami i możecie mi doradzić, jakie są 'must-have' konsultacje przed podpisaniem umowy?</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Piotr_Waw</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 03.01.2025 16:49</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 12 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (81).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">adresowanie</span><span class="tag">nieruchomości</span><span class="tag">prawo budowlane</span><span class="tag">administracja</span><span class="tag">geodezja</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/jak-poprawnie-adresowac-duzy-kompleks-przemyslowy-z-wieloma-punktami-dostepu.html">Jak poprawnie adresować duży kompleks przemysłowy z wieloma punktami dostępu?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planujemy rozbudowę dużego terenu przemysłowego, który faktycznie jest jedną, ale bardzo rozległą nieruchomością. Mamy jednak wiele odrębnych wejść, biur i punktów usługowych, które użytkownicy traktują jako osobne adresy. Zastanawiam się, czy z punktu widzenia prawa budowlanego i administracyjnego, jest to możliwe do formalnego przypisania do wielu odrębnych punktów adresowych, czy musimy trzymać się jednego głównego adresu dla całej działki. Czy ktoś miał już takie doświadczenie i może mi doradzić, jak to najlepiej załatwić, żeby nie było problemów z pocztą czy służbami?</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Grzesiek_77</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 03.01.2025 15:56</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 17 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (78).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">budownictwo</span><span class="tag">lata 70.</span><span class="tag">materiały budowlane</span><span class="tag">PRL</span><span class="tag">renowacja</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/jakie-materialy-dominowaly-przy-budowie-blokow-w-latach-70-potrzebuje-wiedzy-historycznej.html">Jakie materiały dominowały przy budowie bloków w latach 70.? Potrzebuję wiedzy historycznej!</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Cześć wszystkim. Planuję się zająć renowacją starego bloku i trafiłem na temat materiałów budowlanych z lat 70. Jestem ciekaw, jakie były wtedy standardowe rozwiązania. Czy dominował głównie beton i prefabrykat, czy używano też innych materiałów? Interesuje mnie, czy można było spotkać np. cegłę pełną w tych konstrukcjach, czy wszystko było już w pełni zindustrializowane. Każda informacja o typowych materiałach i technikach budowy z tamtego okresu będzie dla mnie na wagę złota. Dziękuję z góry za pomoc!</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> MartaB</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 03.01.2025 12:11</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 2 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (13).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">kredyt hipoteczny</span><span class="tag">wkład własny</span><span class="tag">nieruchomości</span><span class="tag">finanse</span><span class="tag">prawo bankowe</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/czy-moge-uzyc-mojej-nieruchomosci-jako-wkladu-wlasnego-przy-kredycie-hipotecznym.html">Czy mogę użyć mojej nieruchomości jako wkładu własnego przy kredycie hipotecznym?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję kupić mieszkanie i mam już własność - mały dom, który chciałbym sprzedać, ale nie jestem pewien, jak to się wiąże z procesem kredytowania. Czy banki akceptują taką metodę, czy raczej wymagają gotówki? Interesuje mnie, czy w ogóle jest prawna możliwość użycia nieruchomości jako części wkładu własnego, a jeśli tak, to jakie dokumenty są niezbędne i jakie są ryzyka prawne. Czy ktoś miał już z tym styczność i może podzielić się doświadczeniami?</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Patryk_25</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 03.01.2025 11:59</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 18 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (59).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">prawo cywilne</span><span class="tag">nieruchomości</span><span class="tag">Kodeks cywilny</span><span class="tag">status prawny</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/pytanie-prawne-czy-nieruchomosc-zawsze-ma-status-rzeczy-w-rozumieniu-kc-czy-sa-wyjatki.html">Pytanie prawne: Czy nieruchomość zawsze ma status 'rzeczy' w rozumieniu KC, czy są wyjątki?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Zastanawiam się nad prawnym statusem nieruchomości w kontekście Kodeksu cywilnego. Czy fakt, że jest to nieruchomość, automatycznie oznacza, że ma status 'rzeczy' w sensie prawnym? Czy ta definicja jest absolutna, czy istnieją jakieś niuanse, które mogłyby wpłynąć na jej traktowanie prawne, np. w przypadku użytkowania wieczystego czy nieruchomości wspólnej? Byłbym bardzo wdzięczny za wyjaśnienie, czy można ją traktować jak przedmiot prawa rzeczowego, czy może jest to specyficzna kategoria prawna, która wykracza poza ogólną definicję 'rzeczy'.</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Olek_Kierowca</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 03.01.2025 08:22</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 10 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (71).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">podatek od nieruchomości</span><span class="tag">prawo budowlane</span><span class="tag">opłaty lokalne</span><span class="tag">zakup mieszkania</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/podatek-od-nieruchomosci-co-decyduje-o-ostatecznej-wysokosci-oplaty-potrzebuje-wyjasnienia.html">Podatek od nieruchomości - co decyduje o ostatecznej wysokości opłaty? Potrzebuję wyjaśnienia!</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję zakup mieszkania i jestem kompletnie zdezorientowany co do podatku od nieruchomości. Czy faktycznie wysokość podatku zależy tylko od powierzchni, czy też mają wpływ inne czynniki, np. wiek budynku, czy czy jest to grunt? Czy muszę się martwić, że podatek będzie wyższy, bo dom ma ogród? Bardzo proszę o wyjaśnienie, jakie są kluczowe elementy, na które muszę zwrócić uwagę, zanim podpiszę umowę kupna-sprzedaży. Jakie są prawne podstawy tych wyliczeń?</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> olaf_2000</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 03.01.2025 04:36</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 11 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (67).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">księga wieczysta</span><span class="tag">nieruchomość</span><span class="tag">prawo</span><span class="tag">działka</span><span class="tag">transakcja</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/jak-znalezc-numer-ksiegi-wieczystej-jesli-tylko-znam-adres-i-numer-dzialki.html">Jak znaleźć numer księgi wieczystej, jeśli tylko znam adres i numer działki?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję zakup nieruchomości i jestem kompletnie zagubiony w kwestii dokumentacji. Mam tylko adres oraz numer działki z wypisu, ale nie wiem, jak znaleźć numer księgi wieczystej. Czy wystarczy mi tych danych, czy muszę iść do sądu rejonowego z konkretnymi danymi? Czy jest jakiś prosty, szybki sposób, żeby to sprawdzić online, zanim wezwę jakiegoś prawnika? Bardzo by mi ktoś doradził, bo nie chcę popełnić żadnego błędu na starcie.</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Bartek_123</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 02.01.2025 22:36</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 12 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (33).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">wycena nieruchomości</span><span class="tag">sprzedaż mieszkania</span><span class="tag">rzeczoznawca</span><span class="tag">rynek nieruchomości</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/pomocy-jak-realistycznie-oszacowac-wartosc-mieszkania-w-mojej-okolicy.html">Pomocy! Jak realistycznie oszacować wartość mieszkania w mojej okolicy?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję sprzedaż mieszkania i jestem kompletnie zagubiony w kwestii wyceny. W internecie widzę różne ceny, a znajomi polecają różne metody oszacowania. Czy powinienem polegać na wycenie bankowej, czy może lepiej poprosić o analizę od lokalnego rzeczoznawcy? Bardzo zależy mi na tym, żeby cena była wiarygodna i konkurencyjna, ale nie chcę też, żeby była zbyt zawyżona. Jakie są Wasze doświadczenia z profesjonalnymi wycenami?</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Wojtek_DIY</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 02.01.2025 21:36</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 12 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (82).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">nieruchomości</span><span class="tag">prawo gruntowe</span><span class="tag">rolnictwo</span><span class="tag">zakup ziemi</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/pomocy-jak-odroznic-nieruchomosc-rolna-od-budowlanej-pod-katem-zakupu.html">Pomocy! Jak odróżnić nieruchomość rolną od budowlanej pod kątem zakupu?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planuję kupić działkę i natknąłem się na termin „nieruchomość rolna”. Strasznie się w tym gubię, bo wiem, że to ma ogromne znaczenie prawne i podatkowe. Czy naprawdę kluczowe jest, czy ziemia jest formalnie sklasyfikowana jako rolna, nawet jeśli na niej stoi jakiś budynek? Chciałbym wiedzieć, jakie są główne różnice prawne między tymi typami gruntów i jakie są pułapki przy transakcjach. Czy ktoś miał już takie doświadczenia i może mi coś doradzić?</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Adrian_99</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 02.01.2025 06:08</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 12 odpowiedzi</span>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-item-top">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (6).png" alt="Avatar" class="post-avatar">
+                <div>
+                    <div class="tags">
+                        <span class="tag">duże rodziny</span><span class="tag">plan mieszkania</span><span class="tag">aranżacja wnętrz</span><span class="tag">optymalizacja przestrzeni</span>
+                    </div>
+                    <h3 class="post-title"><a href="https://nieruchomoscibulgaria.info/posts/jak-zaplanowac-idealne-mieszkanie-dla-4-5-osob-jakie-sa-kluczowe-parametry.html">Jak zaplanować idealne mieszkanie dla 4-5 osób? Jakie są kluczowe parametry?</a></h3>
+                </div>
+            </div>
+            
+            <p class="post-desc">Planujemy przeprowadzkę i szukamy mieszkania, które będzie naprawdę komfortowe dla naszej dużej rodziny. Mamy 2 dorosłych i 3 dzieci w różnym wieku. Zastanawiamy się nad idealnym układem, ale nie wiem, na co zwrócić największą uwagę. Czy ważniejszy jest duży salon, czy może raczej więcej łazienek? Jakie są Wasze doświadczenia z optymalizacją przestrzeni w dużych rodzinach? Jakie są absolutne minimum pod względem metrażu i układu, żeby było naprawdę wygodnie, a nie tylko 'mieściło się'? Będę wdzięczny za wszelkie porady!</p>
+            
+            <div class="post-divider"></div>
+            
+            <div class="post-meta">
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Kowalski_99</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 02.01.2025 03:59</span>
+                <span class="meta-item"><svg class="icon" viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> 13 odpowiedzi</span>
+            </div>
+        </div>
+        
+    </div>
+
+    
+    <div class="pagination">
+        
+        
+        <a href="https://nieruchomoscibulgaria.info/" class="page-link ">1</a>
+        
+        
+        <a href="https://nieruchomoscibulgaria.info/page_2.html" class="page-link ">2</a>
+        
+        
+        <a href="https://nieruchomoscibulgaria.info/page_3.html" class="page-link ">3</a>
+        
+        
+        <a href="https://nieruchomoscibulgaria.info/page_4.html" class="page-link ">4</a>
+        
+        
+        <a href="https://nieruchomoscibulgaria.info/page_5.html" class="page-link ">5</a>
+        
+        
+        <a href="https://nieruchomoscibulgaria.info/page_6.html" class="page-link active">6</a>
+        
+        
+        <a href="https://nieruchomoscibulgaria.info/page_7.html" class="page-link ">7</a>
+        
+    </div>
+    
+    
+            </main>
+            
+            <aside class="sidebar">
+                <div class="card card-dark">
+                    <h3 class="widget-title">Statystyki forum</h3>
+                    <ul class="stat-list">
+                        <li><span>Tematy:</span> <span>185</span></li>
+                        <li><span>Wiadomości:</span> <span>2599</span></li>
+                        <li><span>Uczestnicy:</span> <span>143</span></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="widget-title">Losowe tematy</h3>
+                    <ul class="random-links">
+                        
+                        <li><a href="https://nieruchomoscibulgaria.info/posts/pomocy-jaki-metraz-mieszkania-pod-inwestycje-na-wynajem-jest-najbardziej-dochodowy.html"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> Pomocy! Jaki metraż mieszkania pod inwestycję na wynajem jest najbardziej dochodowy?</a></li>
+                        
+                        <li><a href="https://nieruchomoscibulgaria.info/posts/kwalifikacja-nowo-wybudowanego-obiektu-czy-automatycznie-jest-to-srodek-trwaly.html"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> Kwalifikacja nowo wybudowanego obiektu: czy automatycznie jest to środek trwały?</a></li>
+                        
+                        <li><a href="https://nieruchomoscibulgaria.info/posts/kupno-nieruchomosci-niezabudowanej-jakie-sa-najwieksze-pulapki-prawne-i-inwestycyjne.html"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> Kupno nieruchomości niezabudowanej: Jakie są największe pułapki prawne i inwestycyjne?</a></li>
+                        
+                        <li><a href="https://nieruchomoscibulgaria.info/posts/jak-najlepiej-i-najszybciej-sprawdzic-czy-ksiega-wieczysta-dla-dzialki-faktycznie-istnieje.html"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> Jak najlepiej i najszybciej sprawdzić, czy księga wieczysta dla działki faktycznie istnieje?</a></li>
+                        
+                        <li><a href="https://nieruchomoscibulgaria.info/posts/jak-poprawnie-zrozumiec-nieruchomosci-z-perspektywy-makroekonomicznej.html"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> Jak poprawnie zrozumieć nieruchomości z perspektywy makroekonomicznej?</a></li>
+                        
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div>
+                    <h4 class="footer-title"><svg class="icon" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg> BulgariaPlot.net</h4>
+                    <p class="footer-text">Naszą misją jest zapewnienie najlepszej przestrzeni do wymiany doświadczeń i wiedzy.<br><br>&copy; 2026 Wszelkie prawa zastrzeżone.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Zasady Forum</h4>
+                    <p class="footer-text">Spam, wyzwiska, nieodpowiednie treści oraz trolle są surowo zabronione. Bądźmy dla siebie kulturalni.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Polityka</h4>
+                    <p class="footer-text">Wierzymy w przejrzystość. Używamy plików cookie w celu ulepszenia działania strony.<br><a href="#">Polityka prywatności</a></p>
+                </div>
+            </div>
+        </footer>
+    </body>
+    </html>
+    

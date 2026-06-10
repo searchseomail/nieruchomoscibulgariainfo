@@ -1,0 +1,422 @@
+
+    
+    <!DOCTYPE html>
+    <html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jak głęboko trzeba zrozumieć metody wyceny, żeby nie dać się nabrać na raport rzeczoznawcy?</title>
+        
+    <link rel="canonical" href="https://nieruchomoscibulgaria.info/posts/jak-gleboko-trzeba-zrozumiec-metody-wyceny-zeby-nie-dac-sie-nabrac-na-raport-rzeczoznawcy.html" />
+    <meta property="og:title" content="Jak głęboko trzeba zrozumieć metody wyceny, żeby nie dać się nabrać na raport rzeczoznawcy?">
+    <meta property="og:description" content="Zastanawiam się nad zakupem nieruchomości i natrafiłem na raport wyceny. Wszyscy mówią o 'podstawach wyceny rynkowej', ale dla laika to czarna magia. ...">
+    
+        <link rel="icon" href="https://nieruchomoscibulgaria.info/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://nieruchomoscibulgaria.info/css/styles.css">
+        <script>const BASE_URL = "https://nieruchomoscibulgaria.info";</script>
+        <script src="https://nieruchomoscibulgaria.info/js/search.js" defer></script>
+        <script src="https://nieruchomoscibulgaria.info/js/auth.js" defer></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="header-container">
+                <a href="https://nieruchomoscibulgaria.info/" class="logo">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg> BulgariaPlot
+                </a>
+                
+                <div class="search-wrapper">
+                    <input type="text" id="searchInput" placeholder="Szukaj..." autocomplete="off" class="search-input">
+                    <button class="search-btn"><svg class="icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></button>
+                    <div id="searchResults" class="search-results"></div>
+                </div>
+
+                <nav class="header-nav">
+                    <a href="/" class="nav-btn"><svg class="icon" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg> <span class="hidden-mobile">Główna</span></a>
+                    <button onclick="openLogin()" class="nav-btn"><svg class="icon" viewBox="0 0 24 24"><path d="M11 7L9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5-5-5zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8v14z"/></svg> <span class="hidden-mobile">Zaloguj</span></button>
+                    <button onclick="openRegister()" class="btn-primary"><svg class="icon" viewBox="0 0 24 24"><path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Rejestracja</button>
+                </nav>
+            </div>
+            
+    <!-- Без огромного H1 на странице поста, оставляем просто шапку -->
+    
+        </header>
+
+        <div class="layout-container">
+            <main class="main-content">
+                
+    <div class="breadcrumb"><a href="https://nieruchomoscibulgaria.info/">Główna</a> &raquo; Tematy</div>
+    <h1 class="post-main-title">Jak głęboko trzeba zrozumieć metody wyceny, żeby nie dać się nabrać na raport rzeczoznawcy?</h1>
+    
+    <div class="tags" style="margin-bottom: 30px;">
+        <span class="tag" style="background:#111; color:#fff;">wycena nieruchomości</span><span class="tag" style="background:#111; color:#fff;">rzeczoznawca majątkowy</span><span class="tag" style="background:#111; color:#fff;">rynek nieruchomości</span><span class="tag" style="background:#111; color:#fff;">analiza wartości</span>
+    </div>
+
+    <!-- Пост ТС -->
+    <div class="message-block op-post">
+        <div class="user-panel">
+            <img src="https://nieruchomoscibulgaria.info/ava/123712 (68).png" alt="avatar">
+            <div class="user-stats">Rejestracja:<br>17.01.2022<br>Posty: 811</div>
+        </div>
+        <div class="message-content">
+            <div style="flex-grow: 1;">
+                <div class="message-header">
+                    <div class="user-name">Janek88 <span class="badge">Autor tematu</span></div>
+                    <div class="message-date"><svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 16.01.2025 03:22</div>
+                </div>
+                <div class="message-text">Zastanawiam się nad zakupem nieruchomości i natrafiłem na raport wyceny. Wszyscy mówią o 'podstawach wyceny rynkowej', ale dla laika to czarna magia. Czy naprawdę wystarczy wiedzieć, że rzeczoznawca stosuje porównanie transakcyjne, czy trzeba rozumieć, jak bardzo wpływa lokalizacja, stan techniczny i potencjał zagospodarowania na końcową wartość? Chciałbym wiedzieć, na jakie pułapki trzeba uważać, żeby upewnić się, że wycena jest obiektywna i faktycznie odzwierciedla rynek, a nie tylko potrzeby sprzedającego.<br></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="comments-header">14 Odpowiedzi</div>
+
+    <!-- Комментарии -->
+    <div>
+        
+        <div id="comment-1" class="message-block comment ">
+            <div class="user-panel">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (51).png" alt="avatar">
+                <div class="user-stats">05.10.2023<br>Posty: 276</div>
+            </div>
+            <div class="message-content">
+                <div class="message-header">
+                    <div class="user-name">
+                        ZnawcaTematu 
+                        
+                    </div>
+                    <div class="message-date" style="display:flex; align-items:center; gap:10px;">
+                        03.02.2025 21:59
+                        <a href="#comment-1" title="Link do komentarza"><svg class="icon" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+                    </div>
+                </div>
+                <div class="message-text">Zdecydowanie trzeba rozumieć podstawy. Nie wystarczy wiedzieć, że metoda istnieje, trzeba wiedzieć, kiedy jest stosowna. Porównanie transakcyjne jest dobre, ale wymaga idealnych porównywalnych transakcji, a takie rzadko się zdarzają.</div>
+            </div>
+        </div>
+        
+        <div id="comment-2" class="message-block comment ">
+            <div class="user-panel">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (16).png" alt="avatar">
+                <div class="user-stats">06.10.2022<br>Posty: 257</div>
+            </div>
+            <div class="message-content">
+                <div class="message-header">
+                    <div class="user-name">
+                        agata_k 
+                        
+                    </div>
+                    <div class="message-date" style="display:flex; align-items:center; gap:10px;">
+                        14.02.2025 09:52
+                        <a href="#comment-2" title="Link do komentarza"><svg class="icon" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+                    </div>
+                </div>
+                <div class="message-text">Uważaj na wyceny 'na podstawie potencjału'. Często rzeczoznawca uwzględnia to, co *może* być, a nie to, co *jest* na rynku. To jest największa pułapka. Zawsze pytaj o założenia dotyczące przyszłego zagospodarowania.</div>
+            </div>
+        </div>
+        
+        <div id="comment-3" class="message-block comment is-reply">
+            <div class="user-panel">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (24).png" alt="avatar">
+                <div class="user-stats">24.05.2022<br>Posty: 414</div>
+            </div>
+            <div class="message-content">
+                <div class="message-header">
+                    <div class="user-name">
+                        Stas_B 
+                        <span class="reply-badge"><svg class="icon" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"/></svg> W odpowiedzi</span>
+                    </div>
+                    <div class="message-date" style="display:flex; align-items:center; gap:10px;">
+                        06.04.2025 01:06
+                        <a href="#comment-3" title="Link do komentarza"><svg class="icon" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+                    </div>
+                </div>
+                <div class="message-text">Poproszę o link do jakiegoś dobrego źródła. Czarna magia to mało powiedziane.</div>
+            </div>
+        </div>
+        
+        <div id="comment-4" class="message-block comment ">
+            <div class="user-panel">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (69).png" alt="avatar">
+                <div class="user-stats">02.10.2022<br>Posty: 265</div>
+            </div>
+            <div class="message-content">
+                <div class="message-header">
+                    <div class="user-name">
+                        Hubert_K 
+                        
+                    </div>
+                    <div class="message-date" style="display:flex; align-items:center; gap:10px;">
+                        02.05.2025 03:03
+                        <a href="#comment-4" title="Link do komentarza"><svg class="icon" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+                    </div>
+                </div>
+                <div class="message-text">Jeśli wycena ma służyć kredytowi, upewnij się, że bank ma własnego, niezależnego rzeczoznawcę. To minimalizuje ryzyko stronniczości.</div>
+            </div>
+        </div>
+        
+        <div id="comment-5" class="message-block comment is-reply">
+            <div class="user-panel">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (36).png" alt="avatar">
+                <div class="user-stats">20.10.2024<br>Posty: 1262</div>
+            </div>
+            <div class="message-content">
+                <div class="message-header">
+                    <div class="user-name">
+                        gosc_niedzielny 
+                        <span class="reply-badge"><svg class="icon" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"/></svg> W odpowiedzi</span>
+                    </div>
+                    <div class="message-date" style="display:flex; align-items:center; gap:10px;">
+                        08.05.2025 00:17
+                        <a href="#comment-5" title="Link do komentarza"><svg class="icon" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+                    </div>
+                </div>
+                <div class="message-text">Zgadzam się z poprzednikiem. Lokalizacja to nie tylko adres, to infrastruktura, komunikacja i 'feeling' okolicy. To jest trudne do skwantyfikowania, a rzeczoznawcy często to bagatelizują.</div>
+            </div>
+        </div>
+        
+        <div id="comment-6" class="message-block comment ">
+            <div class="user-panel">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (13).png" alt="avatar">
+                <div class="user-stats">21.09.2023<br>Posty: 124</div>
+            </div>
+            <div class="message-content">
+                <div class="message-header">
+                    <div class="user-name">
+                        grzegorz_brzecz 
+                        
+                    </div>
+                    <div class="message-date" style="display:flex; align-items:center; gap:10px;">
+                        10.05.2025 09:00
+                        <a href="#comment-6" title="Link do komentarza"><svg class="icon" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+                    </div>
+                </div>
+                <div class="message-text">Najważniejszy jest stan prawny. Czy na nieruchomości nie ma żadnych obciążeń? To jest podstawa, której nie wolno pominąć.</div>
+            </div>
+        </div>
+        
+        <div id="comment-7" class="message-block comment is-reply">
+            <div class="user-panel">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (72).png" alt="avatar">
+                <div class="user-stats">18.09.2021<br>Posty: 888</div>
+            </div>
+            <div class="message-content">
+                <div class="message-header">
+                    <div class="user-name">
+                        Oliwia_T 
+                        <span class="reply-badge"><svg class="icon" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"/></svg> W odpowiedzi</span>
+                    </div>
+                    <div class="message-date" style="display:flex; align-items:center; gap:10px;">
+                        22.05.2025 13:06
+                        <a href="#comment-7" title="Link do komentarza"><svg class="icon" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+                    </div>
+                </div>
+                <div class="message-text">Czy to oznacza, że powinienem poprosić o zestawienie porównywalnych transakcji, które posłużyły do wyliczenia? To byłoby bardzo pomocne.</div>
+            </div>
+        </div>
+        
+        <div id="comment-8" class="message-block comment is-reply">
+            <div class="user-panel">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (36).png" alt="avatar">
+                <div class="user-stats">25.11.2024<br>Posty: 1209</div>
+            </div>
+            <div class="message-content">
+                <div class="message-header">
+                    <div class="user-name">
+                        Denis_P 
+                        <span class="reply-badge"><svg class="icon" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"/></svg> W odpowiedzi</span>
+                    </div>
+                    <div class="message-date" style="display:flex; align-items:center; gap:10px;">
+                        05.06.2025 08:36
+                        <a href="#comment-8" title="Link do komentarza"><svg class="icon" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+                    </div>
+                </div>
+                <div class="message-text">Poproszę o zestawienie porównywalnych transakcji, które posłużyły do wyliczenia? To byłoby bardzo pomocne.</div>
+            </div>
+        </div>
+        
+        <div id="comment-9" class="message-block comment ">
+            <div class="user-panel">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (59).png" alt="avatar">
+                <div class="user-stats">05.07.2021<br>Posty: 261</div>
+            </div>
+            <div class="message-content">
+                <div class="message-header">
+                    <div class="user-name">
+                        Borys_J 
+                        
+                    </div>
+                    <div class="message-date" style="display:flex; align-items:center; gap:10px;">
+                        18.06.2025 06:09
+                        <a href="#comment-9" title="Link do komentarza"><svg class="icon" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+                    </div>
+                </div>
+                <div class="message-text">Zawsze żądaj szczegółowego uzasadnienia każdej przyjętej wartości. Nie wystarczy 'wg rynku'. Chcę widzieć dane!</div>
+            </div>
+        </div>
+        
+        <div id="comment-10" class="message-block comment is-reply">
+            <div class="user-panel">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (79).png" alt="avatar">
+                <div class="user-stats">25.10.2022<br>Posty: 964</div>
+            </div>
+            <div class="message-content">
+                <div class="message-header">
+                    <div class="user-name">
+                        Lena_C 
+                        <span class="reply-badge"><svg class="icon" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"/></svg> W odpowiedzi</span>
+                    </div>
+                    <div class="message-date" style="display:flex; align-items:center; gap:10px;">
+                        19.06.2025 01:31
+                        <a href="#comment-10" title="Link do komentarza"><svg class="icon" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+                    </div>
+                </div>
+                <div class="message-text">To prawda. Często rzeczoznawca ma interes w zawyżeniu wyceny, zwłaszcza jeśli jest to transakcja powiązana z konkretnym deweloperem. Trzeba mieć oko do szczegółów.</div>
+            </div>
+        </div>
+        
+        <div id="comment-11" class="message-block comment ">
+            <div class="user-panel">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (3).png" alt="avatar">
+                <div class="user-stats">27.09.2024<br>Posty: 317</div>
+            </div>
+            <div class="message-content">
+                <div class="message-header">
+                    <div class="user-name">
+                        radek_krk 
+                        
+                    </div>
+                    <div class="message-date" style="display:flex; align-items:center; gap:10px;">
+                        31.07.2025 09:10
+                        <a href="#comment-11" title="Link do komentarza"><svg class="icon" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+                    </div>
+                </div>
+                <div class="message-text">Warto skonsultować się z prawnikiem specjalizującym się w prawie nieruchomości. On najlepiej oceni, czy metodologia jest poprawna z punktu widzenia prawa.</div>
+            </div>
+        </div>
+        
+        <div id="comment-12" class="message-block comment ">
+            <div class="user-panel">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (64).png" alt="avatar">
+                <div class="user-stats">22.08.2024<br>Posty: 1104</div>
+            </div>
+            <div class="message-content">
+                <div class="message-header">
+                    <div class="user-name">
+                        Leon_M 
+                        
+                    </div>
+                    <div class="message-date" style="display:flex; align-items:center; gap:10px;">
+                        28.10.2025 21:25
+                        <a href="#comment-12" title="Link do komentarza"><svg class="icon" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+                    </div>
+                </div>
+                <div class="message-text">W skrócie: nie ufaj ślepo. Traktuj raport jako hipotezę, którą trzeba zweryfikować własnym research'em. To najlepsza obrona.</div>
+            </div>
+        </div>
+        
+        <div id="comment-13" class="message-block comment is-reply">
+            <div class="user-panel">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (20).png" alt="avatar">
+                <div class="user-stats">27.06.2022<br>Posty: 892</div>
+            </div>
+            <div class="message-content">
+                <div class="message-header">
+                    <div class="user-name">
+                        Franek_P 
+                        <span class="reply-badge"><svg class="icon" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"/></svg> W odpowiedzi</span>
+                    </div>
+                    <div class="message-date" style="display:flex; align-items:center; gap:10px;">
+                        18.12.2025 23:25
+                        <a href="#comment-13" title="Link do komentarza"><svg class="icon" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+                    </div>
+                </div>
+                <div class="message-text">A co z wyceną 'przy użyciu metody dochodowej'? Czy to jest kiedykolwiek stosowne przy standardowym zakupie?</div>
+            </div>
+        </div>
+        
+        <div id="comment-14" class="message-block comment is-reply">
+            <div class="user-panel">
+                <img src="https://nieruchomoscibulgaria.info/ava/123712 (5).png" alt="avatar">
+                <div class="user-stats">20.09.2025<br>Posty: 661</div>
+            </div>
+            <div class="message-content">
+                <div class="message-header">
+                    <div class="user-name">
+                        nowy_tutaj 
+                        <span class="reply-badge"><svg class="icon" viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"/></svg> W odpowiedzi</span>
+                    </div>
+                    <div class="message-date" style="display:flex; align-items:center; gap:10px;">
+                        30.01.2026 02:01
+                        <a href="#comment-14" title="Link do komentarza"><svg class="icon" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></a>
+                    </div>
+                </div>
+                <div class="message-text">Dobre pytanie. Metoda dochodowa jest głównie dla inwestycji komercyjnych (biura, sklepy), a nie dla zwykłego mieszkania. W przypadku mieszkania, skup się na porównaniu transakcyjnym i analizie stanu technicznego.</div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="cta-box">
+        <h3 class="cta-title">Chcesz dołączyć do dyskusji?</h3>
+        <p class="cta-text">Aby zostawić komentarz, musisz zalogować się na forum.</p>
+        <button onclick="openRegister()" class="btn-primary" style="margin: 0 auto;">Rejestracja / Zaloguj</button>
+    </div>
+    
+            </main>
+            
+            <aside class="sidebar">
+                <div class="card card-dark">
+                    <h3 class="widget-title">Statystyki forum</h3>
+                    <ul class="stat-list">
+                        <li><span>Tematy:</span> <span>185</span></li>
+                        <li><span>Wiadomości:</span> <span>2599</span></li>
+                        <li><span>Uczestnicy:</span> <span>143</span></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="widget-title">Losowe tematy</h3>
+                    <ul class="random-links">
+                        
+                        <li><a href="https://nieruchomoscibulgaria.info/posts/prawny-status-komorki-lokatorskiej-czy-to-faktycznie-odrebna-wlasnosc.html"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> Prawny status komórki lokatorskiej - czy to faktycznie odrębna własność?</a></li>
+                        
+                        <li><a href="https://nieruchomoscibulgaria.info/posts/jak-zaczac-inwestowac-w-nieruchomosci-skoro-jestem-kompletnym-laikiem.html"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> Jak zacząć inwestować w nieruchomości, skoro jestem kompletnym laikiem?</a></li>
+                        
+                        <li><a href="https://nieruchomoscibulgaria.info/posts/pomocy-czy-wyposazenie-biura-to-ruchomosc-czy-juz-czesc-nieruchomosci.html"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> Pomocy! Czy wyposażenie biura to ruchomość, czy już część nieruchomości?</a></li>
+                        
+                        <li><a href="https://nieruchomoscibulgaria.info/posts/pomocy-jakie-haslo-pasuje-do-krzyzowki-o-mieszkaniu.html"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> Pomocy! Jakie hasło pasuje do krzyżówki o mieszkaniu?</a></li>
+                        
+                        <li><a href="https://nieruchomoscibulgaria.info/posts/kupno-nieruchomosci-w-obecnych-warunkach-czy-to-dobry-moment-czy-pulapka.html"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> Kupno nieruchomości w obecnych warunkach - czy to dobry moment, czy pułapka?</a></li>
+                        
+                        <li><a href="https://nieruchomoscibulgaria.info/posts/jak-ocenic-potencjal-dzialki-jesli-nie-ma-tam-zadnej-zabudowy.html"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> Jak ocenić potencjał działki, jeśli nie ma tam żadnej zabudowy?</a></li>
+                        
+                        <li><a href="https://nieruchomoscibulgaria.info/posts/jakie-sa-prawdziwe-ukryte-koszty-zakupu-mieszkania-pomocy.html"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> Jakie są prawdziwe ukryte koszty zakupu mieszkania? Pomocy!</a></li>
+                        
+                        <li><a href="https://nieruchomoscibulgaria.info/posts/prognozy-na-rynek-nieruchomosci-2024-2025-czy-warto-kupowac-teraz-czy-poczekac.html"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> Prognozy na rynek nieruchomości 2024/2025 - czy warto kupować teraz, czy poczekać?</a></li>
+                        
+                        <li><a href="https://nieruchomoscibulgaria.info/posts/pomocy-czym-dokladnie-jest-nieruchomosc-wspolna-i-jakie-mamy-prawa-do-czesci-wspolnych.html"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> Pomocy! Czym dokładnie jest 'nieruchomość wspólna' i jakie mamy prawa do części wspólnych?</a></li>
+                        
+                        <li><a href="https://nieruchomoscibulgaria.info/posts/kupno-domu-we-wloszech-jakie-formalnosci-sa-absolutnie-kluczowe-potrzebuje-porady.html"><svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> Kupno domu we Włoszech - Jakie formalności są absolutnie kluczowe? Potrzebuję porady!</a></li>
+                        
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div>
+                    <h4 class="footer-title"><svg class="icon" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg> BulgariaPlot.net</h4>
+                    <p class="footer-text">Naszą misją jest zapewnienie najlepszej przestrzeni do wymiany doświadczeń i wiedzy.<br><br>&copy; 2026 Wszelkie prawa zastrzeżone.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Zasady Forum</h4>
+                    <p class="footer-text">Spam, wyzwiska, nieodpowiednie treści oraz trolle są surowo zabronione. Bądźmy dla siebie kulturalni.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Polityka</h4>
+                    <p class="footer-text">Wierzymy w przejrzystość. Używamy plików cookie w celu ulepszenia działania strony.<br><a href="#">Polityka prywatności</a></p>
+                </div>
+            </div>
+        </footer>
+    </body>
+    </html>
+    
